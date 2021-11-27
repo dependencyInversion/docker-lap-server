@@ -30,7 +30,10 @@ docker build -t <IMAGE_NAME> .
 
 
 ```bash
-docker run --name <CONTAINER_NAME> -d -p <PORT>:80 --mount type=bind,source="$(pwd)"/htdocs,target=/var/www/html <IMAGE_NAME>
+docker run --name apache2 \
+  -d -p 8082:80 \
+  --mount type=bind,source="$(pwd)"/htdocs,target=/var/www/html \
+  apache2-php
 ```
 
 
