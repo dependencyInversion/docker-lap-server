@@ -24,7 +24,7 @@ docker build -t <IMAGE_NAME> .
 ### Start container
 
 1. Navigate into the repos directory using the terminal
-2. Use bash or replace `"$(pwd)"` with absolut path
+2. Use bash or replace `"$(pwd)"` with absolute path
 3. Run the following command after replacing the placeholders
 
 
